@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Dashboard</title>
+    <!-- Link Style Css -->
+    <link rel="stylesheet" href="assets/style/style.css">
+    <!-- Link Font Style -->
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<!-- Body Start -->
+<body>
+    <div class="mobile__view__bpttom__btn">
+        <ul class="menu__list">
+            <!-- Menu Item -->
+            <li class="menu__item">
+                <a class="menu__link " href="index.html">                    
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.6 0H7.2C9.18823 0 10.8 1.61177 10.8 3.6V7.2C10.8 9.18823 9.18823 10.8 7.2 10.8H3.6C1.61177 10.8 0 9.18823 0 7.2V3.6C0 1.61177 1.61177 0 3.6 0ZM7.2 8.4C7.86274 8.4 8.4 7.86274 8.4 7.2V3.6C8.4 2.93726 7.86274 2.4 7.2 2.4H3.6C2.93726 2.4 2.4 2.93726 2.4 3.6V7.2C2.4 7.86274 2.93726 8.4 3.6 8.4H7.2ZM7.2 13.2H3.6C1.61177 13.2 0 14.8118 0 16.8V20.4C0 22.3882 1.61177 24 3.6 24H7.2C9.18823 24 10.8 22.3882 10.8 20.4V16.8C10.8 14.8118 9.18823 13.2 7.2 13.2ZM7.2 21.6C7.86274 21.6 8.4 21.0627 8.4 20.4V16.8C8.4 16.1373 7.86274 15.6 7.2 15.6H3.6C2.93726 15.6 2.4 16.1373 2.4 16.8V20.4C2.4 21.0627 2.93726 21.6 3.6 21.6H7.2ZM20.4002 13.2H16.8002C14.812 13.2 13.2002 14.8118 13.2002 16.8V20.4C13.2002 22.3882 14.812 24 16.8002 24H20.4002C22.3884 24 24.0002 22.3882 24.0002 20.4V16.8C24.0002 14.8118 22.3884 13.2 20.4002 13.2ZM20.4 21.6C21.0627 21.6 21.6 21.0627 21.6 20.4V16.8C21.6 16.1373 21.0627 15.6 20.4 15.6H16.8C16.1373 15.6 15.6 16.1373 15.6 16.8V20.4C15.6 21.0627 16.1373 21.6 16.8 21.6H20.4ZM20.4002 0H16.8002C14.812 0 13.2002 1.61177 13.2002 3.6V7.2C13.2002 9.18823 14.812 10.8 16.8002 10.8H20.4002C22.3884 10.8 24.0002 9.18823 24.0002 7.2V3.6C24.0002 1.61177 22.3884 0 20.4002 0ZM20.4 8.4C21.0627 8.4 21.6 7.86274 21.6 7.2V3.6C21.6 2.93726 21.0627 2.4 20.4 2.4H16.8C16.1373 2.4 15.6 2.93726 15.6 3.6V7.2C15.6 7.86274 16.1373 8.4 16.8 8.4H20.4Z" fill="#A7B8CC"/>
+                        </svg>
+                    <span>
+                        Dashboard
+                    </span> 
+                </a>
+            </li> 
+            <li class="menu__item">
+                <a class="menu__link" href="envelope.html">                    
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9999 16.9999V2.99994C19.9999 1.34308 18.6568 -6.10352e-05 16.9999 -6.10352e-05H2.99994C1.34308 -6.10352e-05 -6.10352e-05 1.34308 -6.10352e-05 2.99994V16.9999C-6.10352e-05 18.6568 1.34308 19.9999 2.99994 19.9999H16.9999C18.6568 19.9999 19.9999 18.6568 19.9999 16.9999ZM13.9999 7.9999C12.8954 7.9999 11.9999 8.89533 11.9999 9.9999C11.9999 11.1045 12.8954 11.9999 13.9999 11.9999C15.1045 11.9999 15.9999 11.1045 15.9999 9.9999C15.9999 8.89533 15.1045 7.9999 13.9999 7.9999ZM18 6.99998H11C10.4477 6.99998 9.99998 7.44769 9.99998 7.99998V12C9.99998 12.5523 10.4477 13 11 13H18V6.99998ZM16.9999 1.9999C17.5522 1.9999 17.9999 2.44761 17.9999 2.9999V4.9999H10.9999C9.34304 4.9999 7.9999 6.34304 7.9999 7.9999V11.9999C7.9999 13.6568 9.34304 14.9999 10.9999 14.9999H17.9999V16.9999C17.9999 17.5522 17.5522 17.9999 16.9999 17.9999H2.9999C2.44761 17.9999 1.9999 17.5522 1.9999 16.9999V2.9999C1.9999 2.44761 2.44761 1.9999 2.9999 1.9999H16.9999Z" fill="#A7B8CC"/>
+                        </svg>
+    
+                    <span>
+                        Envelope 
+                    </span> 
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="/transaction.html" class="menu__link" href="">
+                    <img src="assets/svg/transaction-icon.svg" alt="">
+                    <span>
+                        Transaction 
+                    </span> 
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link active" href="/open-envelope.html">
+                    <img src="assets/svg/analyst.svg" alt="">
+                    <span>
+                        Analytics 
+                    </span> 
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+        <div class="menu">
+            <!-- Header -->
+        <header class="header">
+            <div class="header__logo">
+                <h2> Good <span> Morning</span>, Amrit</h2>
+            </div>
+            <button class="header__toggle">
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.8 8.38643V10.7864L0 10.7864V8.38643L16.8 8.38643ZM24 16.7729H0V19.1688H24V16.7729ZM0 0V2.396L23.98 2.396V0L0 0Z" fill="#0B0B0B"/>
+                </svg>
+            </button>
+            <div class="header__menu__logo">
+                <img src="assets/svg/header-logo.svg" alt="">
+            </div>  
+            <div class="header__profile">
+                <div class="header__profile__img">
+                    <img src="assets/images/header-proflie.png" alt="">
+                </div>
+                <div class="profile__detail">
+                    <h4 class="profile__name">
+                        Betty Duncan
+                    </h4>
+                    <span class="profile__id">
+                        User@123
+                    </span>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="container">
+                <!-- Aside Menu Items -->
+                <div>
+
+                    <div class="aside__bar">
+                        <a href="" class="menu__logo">
+                            <img src="assets/svg/header-logo.svg" alt="">
+                        </a>  
+                          <!-- Menu List -->
+                          
+                          
+                        <ul class="menu__list">
+                             
+                                    
+                            <!-- Menu Item -->
+                            <li class="menu__item">
+                                <a class="menu__link " href="">                                    
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.6 0H7.2C9.18823 0 10.8 1.61177 10.8 3.6V7.2C10.8 9.18823 9.18823 10.8 7.2 10.8H3.6C1.61177 10.8 0 9.18823 0 7.2V3.6C0 1.61177 1.61177 0 3.6 0ZM7.2 8.4C7.86274 8.4 8.4 7.86274 8.4 7.2V3.6C8.4 2.93726 7.86274 2.4 7.2 2.4H3.6C2.93726 2.4 2.4 2.93726 2.4 3.6V7.2C2.4 7.86274 2.93726 8.4 3.6 8.4H7.2ZM7.2 13.2H3.6C1.61177 13.2 0 14.8118 0 16.8V20.4C0 22.3882 1.61177 24 3.6 24H7.2C9.18823 24 10.8 22.3882 10.8 20.4V16.8C10.8 14.8118 9.18823 13.2 7.2 13.2ZM7.2 21.6C7.86274 21.6 8.4 21.0627 8.4 20.4V16.8C8.4 16.1373 7.86274 15.6 7.2 15.6H3.6C2.93726 15.6 2.4 16.1373 2.4 16.8V20.4C2.4 21.0627 2.93726 21.6 3.6 21.6H7.2ZM20.4002 13.2H16.8002C14.812 13.2 13.2002 14.8118 13.2002 16.8V20.4C13.2002 22.3882 14.812 24 16.8002 24H20.4002C22.3884 24 24.0002 22.3882 24.0002 20.4V16.8C24.0002 14.8118 22.3884 13.2 20.4002 13.2ZM20.4 21.6C21.0627 21.6 21.6 21.0627 21.6 20.4V16.8C21.6 16.1373 21.0627 15.6 20.4 15.6H16.8C16.1373 15.6 15.6 16.1373 15.6 16.8V20.4C15.6 21.0627 16.1373 21.6 16.8 21.6H20.4ZM20.4002 0H16.8002C14.812 0 13.2002 1.61177 13.2002 3.6V7.2C13.2002 9.18823 14.812 10.8 16.8002 10.8H20.4002C22.3884 10.8 24.0002 9.18823 24.0002 7.2V3.6C24.0002 1.61177 22.3884 0 20.4002 0ZM20.4 8.4C21.0627 8.4 21.6 7.86274 21.6 7.2V3.6C21.6 2.93726 21.0627 2.4 20.4 2.4H16.8C16.1373 2.4 15.6 2.93726 15.6 3.6V7.2C15.6 7.86274 16.1373 8.4 16.8 8.4H20.4Z" fill="#A7B8CC"/>
+                                        </svg>
+                                    <span>
+                                        Dashboard
+                                    </span>
+                                </a>
+                            </li> 
+                            
+                            <li class="menu__item">
+                                <a class="menu__link" href="envelope.html">                                    
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9999 16.9999V2.99994C19.9999 1.34308 18.6568 -6.10352e-05 16.9999 -6.10352e-05H2.99994C1.34308 -6.10352e-05 -6.10352e-05 1.34308 -6.10352e-05 2.99994V16.9999C-6.10352e-05 18.6568 1.34308 19.9999 2.99994 19.9999H16.9999C18.6568 19.9999 19.9999 18.6568 19.9999 16.9999ZM13.9999 7.9999C12.8954 7.9999 11.9999 8.89533 11.9999 9.9999C11.9999 11.1045 12.8954 11.9999 13.9999 11.9999C15.1045 11.9999 15.9999 11.1045 15.9999 9.9999C15.9999 8.89533 15.1045 7.9999 13.9999 7.9999ZM18 6.99998H11C10.4477 6.99998 9.99998 7.44769 9.99998 7.99998V12C9.99998 12.5523 10.4477 13 11 13H18V6.99998ZM16.9999 1.9999C17.5522 1.9999 17.9999 2.44761 17.9999 2.9999V4.9999H10.9999C9.34304 4.9999 7.9999 6.34304 7.9999 7.9999V11.9999C7.9999 13.6568 9.34304 14.9999 10.9999 14.9999H17.9999V16.9999C17.9999 17.5522 17.5522 17.9999 16.9999 17.9999H2.9999C2.44761 17.9999 1.9999 17.5522 1.9999 16.9999V2.9999C1.9999 2.44761 2.44761 1.9999 2.9999 1.9999H16.9999Z" fill="#A7B8CC"/>
+                                        </svg>
+    
+                                    <span>
+                                        Envelope 
+                                    </span>
+                                </a>
+                            </li>
+                
+                            <li class="menu__item">
+                                <a class="menu__link" href="/transaction.html">
+                                    <img src="assets/svg/transaction-icon.svg" alt="">
+                                    <span>
+                                        Transaction 
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link active" href="/open-envelope.html">
+                                    <img src="assets/svg/analyst.svg" alt="">
+                                    <span>
+                                        Analytics 
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/shared-open-envelope.html" class="menu__link" href="">
+                                    <img src="assets/svg/setting.svg" alt="">
+                                    <span>
+                                        Setting 
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                
+                    </div>
+                </div>
+                <!-- Sections -->
+                <div class="sections">
+                    <!-- Section Start -->
+                    <section class="sec__banner">
+                        <div class="sec__content">
+                            <div class="banner__icon__right">
+                                <svg width="175" height="73" viewBox="0 0 175 73" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="175" height="73" fill="url(#pattern0)"/>
+                                    <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_2_9" transform="scale(0.00507614 0.0120482)"/>
+                                    </pattern>
+                                    <image id="image0_2_9" width="197" height="83" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAABTCAYAAAAvB8OuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBQzdCRDM4MDFCNTIxMUU5OEIwM0ZCNzVFNDA3QUZFMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBQzdCRDM4MTFCNTIxMUU5OEIwM0ZCNzVFNDA3QUZFMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkFDN0JEMzdFMUI1MjExRTk4QjAzRkI3NUU0MDdBRkUzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkFDN0JEMzdGMUI1MjExRTk4QjAzRkI3NUU0MDdBRkUzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+oHbvzQAADdBJREFUeNrsXQm4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"/>
+                                    </defs>
+                                    </svg>
+        
+                            </div>
+                            <div class="banner__icon__left">
+                                    <img src="assets/svg/banner-icon-right.svg" alt="">
+                            </div>
+                            <div class="sec__text">
+                                <h2 class="sec__heading">
+                                    Upgrade your plan
+                                </h2>
+                                <p class="sec__brief">
+                                    70% discount for 1 year subcription.
+                                    Oportunity to learn new interior design skills.
+                                </p>
+                                <a href="" class="sec__button">
+                                    Start Premium
+                                </a>
+                            </div>
+                            <div class="sec__img">
+                                <img src="assets/images/banner-img.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Banner Section End  -->
+    
+                    <section>
+                        <div class="container">
+                        
+                        </div>
+                    </section>
+                    <!-- Section Top Categories Start -->
+                    <form class="sear__unput">
+                        <label for="search">
+                            <img src="assets/svg/search-icon.svg" alt="">
+                        </label>
+                        <input id="search" type="text" placeholder="Its easy to find your old transactions now!">
+                    </form>
+                    <section class="sec__top__categories">
+                        <div class="sec__content">
+                            <div class="sec__header">
+                                <h2 class="sec__heading">
+                                    Top Categories 
+                                </h2>
+                                <a href="" class="d_all__categories all__categories">See All Categories <span><img src="assets/svg/all-categories.svg" alt=""></span></a>
+                            </div>
+                            <div class="categories">
+                                <div class="categoris__details open_account_balance">
+                                    <div class="categorie__icon">
+                                        <img src="assets/svg/open-balance-account-icon.svg" alt="">
+                                        <h4 class="categorie__heading">
+                                            Balance
+                                        </h4>
+                                    </div>
+                                    
+                                        <p class="categorie__info">
+                                            $3000.00
+                                        </p>
+                                    
+                                </div>
+                    
+                            </div>
+                            <a href="" class="m_all__categories all__categories">See All <span><img src="assets/svg/all-categories.svg" alt=""></span></a>
+                        </div>
+                    </section>
+                    <!-- Section Top Categories End -->
+                    <div class="chart open-envelope">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    
+                    <!-- Transaction Section Start -->
+
+                    <!-- Section Top Categories End -->
+                    <div class="donut_chart open-envelope">
+                        <canvas id="doughnut"></canvas>
+                    </div>
+                    
+                    <!-- Transaction Section Start -->
+                    <section class="sec__transaction">
+                        <div class="sec__content">
+                            <div class="sec__header">
+                                <h2 class="sec__heading">
+                                    Latest Transaction
+                                </h2>
+                                 <a href="" class="d_all__categories all__categories">See All Transaction <span><img src="assets/svg/all-categories.svg" alt=""></span></a>
+                            </div>
+                            <div class="transaction__details">
+                                <div class="transaction__inner__details">
+                                    <div class="transaction__name__details">
+                                        <h4 class="transaction__icon">
+                                            E
+                                        </h4>
+                                        <h5 class="transaction__name">
+                                            Entertainment Expenses
+                                        </h5>
+                                    </div>
+                                    <div class="transaction__date">
+                                        18 Dec 2021
+                                    </div>
+                                    <div class="transaction__envelope">
+                                        Envelope Name 1
+                                    </div>
+                                    <div class="transaction__price">
+                                        $2500.00
+                                    </div>
+                                </div>
+                                <div class="transaction__inner__details">
+                                    <div class="transaction__name__details">
+                                        <h4 class="transaction__icon">
+                                            E
+                                        </h4>
+                                        <h5 class="transaction__name">
+                                            Entertainment Expenses
+                                        </h5>
+                                    </div>
+                                    <div class="transaction__date">
+                                        18 Dec 2021
+                                    </div>
+                                    <div class="transaction__envelope">
+                                        Envelope Name 1
+                                    </div>
+                                    <div class="transaction__price">
+                                        $2500.00
+                                    </div>
+                                </div>
+                                <div class="transaction__inner__details">
+                                    <div class="transaction__name__details">
+                                        <h4 class="transaction__icon">
+                                            E
+                                        </h4>
+                                        <h5 class="transaction__name">
+                                            Entertainment Expenses
+                                        </h5>
+                                    </div>
+                                    <div class="transaction__date">
+                                        18 Dec 2021
+                                    </div>
+                                    <div class="transaction__envelope">
+                                        Envelope Name 1
+                                    </div>
+                                    <div class="transaction__price">
+                                        $2500.00
+                                    </div>
+                                </div>
+                                <div class="transaction__inner__details">
+                                    <div class="transaction__name__details">
+                                        <h4 class="transaction__icon">
+                                            E
+                                        </h4>
+                                        <h5 class="transaction__name">
+                                            Entertainment Expenses
+                                        </h5>
+                                    </div>
+                                    <div class="transaction__date">
+                                        18 Dec 2021
+                                    </div>
+                                    <div class="transaction__envelope">
+                                        Envelope Name 1
+                                    </div>
+                                    <div class="transaction__price">
+                                        $2500.00
+                                    </div>
+                                </div>
+                                <div class="transaction__inner__details">
+                                    <div class="transaction__name__details">
+                                        <h4 class="transaction__icon">
+                                            E
+                                        </h4>
+                                        <h5 class="transaction__name">
+                                            Entertainment Expenses
+                                        </h5>
+                                    </div>
+                                    <div class="transaction__date">
+                                        18 Dec 2021
+                                    </div>
+                                    <div class="transaction__envelope">
+                                        Envelope Name 1
+                                    </div>
+                                    <div class="transaction__price">
+                                        $2500.00
+                                    </div>
+                                </div>
+                                <div class="transaction__inner__details">
+                                    <div class="transaction__name__details">
+                                        <h4 class="transaction__icon">
+                                            E
+                                        </h4>
+                                        <h5 class="transaction__name">
+                                            Entertainment Expenses
+                                        </h5>
+                                    </div>
+                                    <div class="transaction__date">
+                                        18 Dec 2021
+                                    </div>
+                                    <div class="transaction__envelope">
+                                        Envelope Name 1
+                                    </div>
+                                    <div class="transaction__price">
+                                        $2500.00
+                                    </div>
+                                </div>
+                                <div class="transaction__inner__details">
+                                    <div class="transaction__name__details">
+                                        <h4 class="transaction__icon">
+                                            E
+                                        </h4>
+                                        <h5 class="transaction__name">
+                                            Entertainment Expenses
+                                        </h5>
+                                    </div>
+                                    <div class="transaction__date">
+                                        18 Dec 2021
+                                    </div>
+                                    <div class="transaction__envelope">
+                                        Envelope Name 1
+                                    </div>
+                                    <div class="transaction__price">
+                                        $2500.00
+                                    </div>
+                                </div>
+                                <div class="transaction__inner__details">
+                                    <div class="transaction__name__details">
+                                        <h4 class="transaction__icon">
+                                            E
+                                        </h4>
+                                        <h5 class="transaction__name">
+                                            Entertainment Expenses
+                                        </h5>
+                                    </div>
+                                    <div class="transaction__date">
+                                        18 Dec 2021
+                                    </div>
+                                    <div class="transaction__envelope">
+                                        Envelope Name 1
+                                    </div>
+                                    <div class="transaction__price">
+                                        $2500.00
+                                    </div>
+                                </div>
+                                <div class="transaction__inner__details">
+                                    <div class="transaction__name__details">
+                                        <h4 class="transaction__icon">
+                                            E
+                                        </h4>
+                                        <h5 class="transaction__name">
+                                            Entertainment Expenses
+                                        </h5>
+                                    </div>
+                                    <div class="transaction__date">
+                                        18 Dec 2021
+                                    </div>
+                                    <div class="transaction__envelope">
+                                        Envelope Name 1
+                                    </div>
+                                    <div class="transaction__price">
+                                        $2500.00
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="m_all__categories all__categories">See All Transaction <span><img src="assets/svg/all-categories.svg" alt=""></span></a>
+                        </div>
+                    </section>
+                    <!-- Transaction Section End -->
+                </div>
+                <!-- Aside Bar -->
+                <div>
+
+                    <aside class="aside__account__details">
+                        <!-- enevelope Balance -->
+                        <div class="enevelope__balance">
+                            <h2 class="sec__heading">
+                                Envelope Balance
+                            </h2>
+                            <div class="envelope__card__detail">
+                                <div class="envelope__card__inner__detail">
+                                    <div class="envelope__profile">
+                                        <img src="assets/images/enevelpe-img1.png" alt="">
+                                    </div>
+                                    <div class="envelope__account__detail">
+                                        <h3 class="envelope__name">
+                                            Envelope Type 1
+                                        </h3>
+                                        <span class="envelope__mony">
+                                            $5000.00
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="envelope__card__inner__detail">
+                                    <div class="envelope__profile">
+                                        <img src="assets/images/enevelpe-img2.png" alt="">
+                                    </div>
+                                    <div class="envelope__account__detail">
+                                        <h3 class="envelope__name">
+                                            Envelope Type 1
+                                        </h3>
+                                        <span class="envelope__mony">
+                                            $5000.00
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="envelope__card__inner__detail">
+                                    <div class="envelope__profile">
+                                        <img src="assets/images/enevelpe-img3.png" alt="">
+                                    </div>
+                                    <div class="envelope__account__detail">
+                                        <h3 class="envelope__name">
+                                            Envelope Type 1
+                                        </h3>
+                                        <span class="envelope__mony">
+                                            $5000.00
+                                        </span>
+                                    </div>
+                                </div>
+                                <a href="" class="see__all__enevelpe">
+                                    See All
+                                    <span><img src="assets/svg/all-categories.svg" alt=""></span>
+                                </a>
+                                
+                            </div>
+                        </div>
+    
+                        <!-- Accounts -->
+                        <div class="enevelope__balance accounts">
+                            <h2 class="sec__heading">
+                                Accounts
+                            </h2>
+                            <div class="envelope__card__detail">
+                                <div class="account__Card">
+                                    <h4 class="card__heading">
+                                        Bank Account
+                                    </h4>
+                                    <div class="account__inner__details">
+                                        <div class="envelope__card__inner__detail">
+                                            <div class="envelope__profile">
+                                                <img src="assets/images/hdfc.jpg" alt="">
+                                            </div>
+                                            <div class="envelope__account__detail">
+                                                <h3 class="envelope__name">
+                                                    HDFC Bank
+                                                </h3>
+                                                <span class="envelope__mony">
+                                                    $5000.00
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/svg/account-arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="account__Card">
+                                    <h4 class="card__heading">
+                                        Wallet
+                                    </h4>
+                                    <div class="account__inner__details">
+                                        <div class="envelope__card__inner__detail">
+                                            <div class="envelope__profile">
+                                                <img src="assets/images/paytm.jpg" alt="">
+                                            </div>
+                                            <div class="envelope__account__detail">
+                                                <h3 class="envelope__name">
+                                                    Paytm Wallet
+                                                </h3>
+                                                <span class="envelope__mony">
+                                                    $5000.00
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/svg/account-arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="account__Card">
+                                    <h4 class="card__heading">
+                                        Cash Payment
+                                    </h4>
+                                    <div class="account__inner__details">
+                                        <div class="envelope__card__inner__detail">
+                                            <div class="envelope__profile">
+                                                <img src="assets/images//cash.jpg" alt="">
+                                            </div>
+                                            <div class="envelope__account__detail">
+                                                <h3 class="envelope__name">
+                                                    Payment
+                                                </h3>
+                                                <span class="envelope__mony">
+                                                    $5000.00
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/svg/account-arrow.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <!--  Link Js -->
+        <script src="assets/js/custom.js"></script>
+        <script>
+            var xValues = [100,200,300,400,500,600,700,800,900,1000];
+          new Chart("doughnut", {
+    type: 'doughnut',
+     data : {
+  labels: [
+    'Red',
+    'Blue',
+    'Yellow'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [300, 100, 100],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)',
+      'rgb(255, 205, 86)'
+    ],
+    hoverOffset: 4
+  }]
+},
+  options: {
+    legend: {display: false}
+  }
+});
+
+            
+          
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+</script>
+</body>
+<!-- Body End -->
+</html>
