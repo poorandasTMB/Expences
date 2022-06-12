@@ -28,3 +28,22 @@ TabsBtn.forEach((element,index)=>{
 
 let headerToggleSpan  =document.querySelector(".header__logo span");
 
+// Header Dynmic Js Code
+let HeaderExpanecs=document.querySelector(".header__logo span");
+let getdate= new Date();
+let time=getdate.getHours();
+
+var today = new Date()
+var curHr = today.getHours()
+
+if (curHr < 12) {
+    HeaderExpanecs.innerHTML="Morning"
+} else if (curHr < 18) {
+  HeaderExpanecs.innerHTML="afternoon"
+}
+else if (curHr < 20) {
+    HeaderExpanecs.innerHTML="Evening"
+  }
+else {
+    HeaderExpanecs.innerHTML="Night"
+}
